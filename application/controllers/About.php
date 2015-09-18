@@ -6,10 +6,12 @@
  * and open the template in the editor.
  */
 
-class About extends CI_Controller {
+class About extends Application {
 
     public function index()
     {
-        $this->load->view('about');
+        //$this->load->view('about');
+        $this->data['pagebody'] = 'about';
+        $this->render();
     }
 }
